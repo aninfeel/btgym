@@ -70,3 +70,6 @@ setup(
     include_package_data=True,
     packages=packages
 )
+
+
+#pip install gym==0.15.7

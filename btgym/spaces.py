@@ -44,6 +44,9 @@ class DictSpace(spaces.Dict):
 
     def _get_shape(self):
         return OrderedDict([(k, space.shape) for k, space in self.spaces.items()])
+    
+    def __set_item__(self, k, v):
+        setattr(self, k, v)
 
 
 class ActionDictSpace(DictSpace):
